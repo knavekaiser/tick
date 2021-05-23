@@ -6,4 +6,9 @@ const pingHeroku = setInterval(() => {
     .catch((err) => {
       console.log("could not ping", err);
     });
+  fetch("https://tully-next.herokuapp.com/")
+    .then((res) => {})
+    .catch((err) => {
+      console.log("could not ping", err);
+    });
 }, 10000);
